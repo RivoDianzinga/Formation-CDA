@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!--préambule requis en haut de tous les documents-->
+
+<html lang="fr"> <!-- racine du document qui va contenir 
+    toutes les balises, elle contient souvent lang="" qui spécifie 
+    la langue du document -->
+
+<!-- Une page html comprend 2 grandes parties : le head et le body 
+ le head c'est l'onglet de la page; et le body est toute la partie qui 
+ s'affiche en dessous, c'est-à-dire le contenu principal de la page.
+ Le head contient les métadonnées comme : 
+ meta pour utf et device, title pour le titre de l'onglet, 
+ script, link pour les liens, style, base, noscript, template.
+ Quant au body, il contient le main, les sections, les paragraphes, etc.,  
+ Un seul head et un seul body-->
+
+<head> <!--l'onglet-->
+    <meta charset="UTF-8"> <!-- meta souvent utilisée pour les accents en français-->
+    <meta name="viewport" content="with=device-width, initial scale=1.0">
+    <!--une autre meta souvent utilisée pour adapter le contenu de la page à la 
+    largeur de l'écran de l'appareil qui affiche la page-->
+    <title> 
+        Portfolio de DIANZINGA Mamy Rivo 
+    </title>
+</head>
+
+<body> <!-- contenu principal de la page. Ici, il est structuré  en 
+    header, main et footer. et dans le main, on a les sections et paragraphes -->
+
+<header> <!--utilisé comme le titre introductif dans une partie du body-->
+    <h1> <!-- sous-titre niveau 1-->
+        DIANZINGA Mamy Rivo
+    </h1>
+    <nav> <!--utilisé pour une partie de texte qui va contenir des liens, 
+        et les textes qui sont effectivement des liens sont contenus dans 
+        l'étl d'ancre <a> avec son attribut href. généralement <nav> est utilisé 
+        avec <a>. href est justement le lien vers la ressource (soit un 
+        fichier, soit une url ou rien) -->
+        <a href="#">
+            Accueil
+        </a>
+        <a href="#">
+            Projets
+        </a>
+        <a href="#">
+            Contact
+        </a>
+    </nav>  
+
+</header>
+
+<main> <!-- main est la partie centrale du body-->
+    <h2> <!-- sous-titre niveau 2-->
+        À propos de moi
+    </h2>
+    <p> <!-- pour les paragraphes. Les paragraphes sont souvent utilisés 
+        pour faire des blocs de texte espacés -->
+        Physicien computationnel (PhD) spécialisé en modélisation numérique 
+        des matériaux, calcul scientifique et simulations basées sur la théorie 
+        de la fonctionnelle de la densité (DFT). Expérience en recherche 
+        académique (CNRS, CEA) et en innovation industrielle (R&D et conseil, 
+        Berger-Levrault). Expertise en simulations de structure électronique, 
+        développement d'outils scientifiques en Python et Fortran, ainsi qu'en 
+        analyse de données scientifiques. Je suis actuellement concepteur 
+        développeur d'applications en formation professionnelle continue au M2I, 
+        afin de contribuer par la suite, scientifiquement, techniquement et 
+        opérationnellement dans des projets de la physique appliquée tels que 
+        le nucléaire, l'énergie impliquant en particulier la modélisation et 
+        la simulation.
+    </p>
+
+    <h2>
+        Mes compétences
+    </h2>
+    <ul> <!--utilisé pour une liste -->
+        <li> <!-- élt de chaque liste 
+            ul et li s'utilisent toujours ensemble -->
+            Modélisation atomistique 
+        </li>
+        <li>
+            Simulation numérique
+        </li>
+        <li>
+            Développement fullstack d'application
+        </li>
+        <li>
+            Python / Fortran / Java / HTML / CSS / Javascript / PostgreSQL
+        </li>
+        <li>
+            Analyse et rédaction technique et scientifique
+        </li>
+    </ul>
+
+</main>
+
+<footer> <!-- élt de pied de page qui est souvent en bas de page et contient les 
+    informations de l'auteur -->
+    <p>
+        <a href="https://github.com/RivoDianzinga" target="_blank">
+            <!-- target est une propriété qui est souvent utilisée avec <a>, 
+            et qui indique où afficher la ressource href. La valeur 
+            _blank permet d'afficher la ressource dans un nouvel onglet -->
+        Github
+        </a>
+    </p>
+    <p>
+       © 2026 - DIANZINGA Mamy Rivo 
+    </p>
+
+</footer>
+
+</body>
+
+</html> <!-- fin de la racine de la page document html-->
+
