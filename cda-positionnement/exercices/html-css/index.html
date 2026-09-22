@@ -17,10 +17,20 @@
     <meta charset="UTF-8"> <!-- meta souvent utilisée pour les accents en français-->
     <meta name="viewport" content="with=device-width, initial scale=1.0">
     <!--une autre meta souvent utilisée pour adapter le contenu de la page à la 
-    largeur de l'écran de l'appareil qui affiche la page-->
+    largeur de l'écran de l'appareil qui affiche la page, c'est déjà du responsive-->
     <title> 
         Portfolio de DIANZINGA Mamy Rivo 
     </title>
+    <link href="style.css" rel="stylesheet">
+    <!-- link permet de relier le document courant à une ressource externe, 
+        il utilise href. Une petite subtilité à connaitre : lorsque href 
+        est un chemin, ce dernier est le chemin du document courant vers 
+        la ressource. rel définit la relation entre le document courant et 
+        la ressource liée. rel s'utilise avec link, <a>, area et form. Une 
+        des valeurs de rel est stylesheet qui signifie d'importer une 
+        feuille de style.
+        Pour appliquer le css au html, il faut d'abord que le html importe 
+        la feuille de style css-->
 </head>
 
 <body> <!-- contenu principal de la page. Ici, il est structuré  en 
@@ -52,7 +62,7 @@
     <h2> <!-- sous-titre niveau 2-->
         À propos de moi
     </h2>
-    <p> <!-- pour les paragraphes. Les paragraphes sont souvent utilisés 
+    <p id="apropos"> <!-- pour les paragraphes. Les paragraphes sont souvent utilisés 
         pour faire des blocs de texte espacés -->
         Physicien computationnel (PhD) spécialisé en modélisation numérique 
         des matériaux, calcul scientifique et simulations basées sur la théorie 
@@ -68,28 +78,91 @@
         la simulation.
     </p>
 
-    <h2>
+    <h2 id="mescompetences">
         Mes compétences
     </h2>
-    <ul> <!--utilisé pour une liste -->
-        <li> <!-- élt de chaque liste 
-            ul et li s'utilisent toujours ensemble -->
-            Modélisation atomistique 
-        </li>
-        <li>
-            Simulation numérique
-        </li>
-        <li>
-            Développement fullstack d'application
-        </li>
-        <li>
-            Python / Fortran / Java / HTML / CSS / Javascript / PostgreSQL
-        </li>
-        <li>
-            Analyse et rédaction technique et scientifique
-        </li>
-    </ul>
 
+    <div class="grille-competences">
+        <!-- les "div" sont utilisés pour créer des blocs de texte, afin de 
+         facilement les manipuler avec css et javascript. les div sont utilisés 
+         pour créer des cartes, des grilles, des boites avec lesquelles 
+         on applique souvent la flexbox -->
+        <div class="carte-competences">
+            <h3>
+                Physique computionnelle
+            </h3>
+            <ul> <!--utilisé pour une liste -->
+                <li> <!-- élt de chaque liste 
+                    ul et li s'utilisent toujours ensemble -->
+                    Python / Fortran / Bash / C / C++ 
+                </li>
+                <li>
+                    DFT (VSAP, ABINIT)
+                </li>
+                <li>
+                    Simulation numérique
+                </li>
+                <li>
+                    Modélisation atomistique
+                </li>
+                <li>
+                    Calcul scientifique
+                </li>
+                <li>
+                    Analyse de données scientifiques
+                </li>              
+                <li>
+                    Visualisation scientifiques de données (Xmgrace, Gnuplot)
+                </li>
+            </ul>
+        </div>
+        <div class="carte-competences">
+            <h3>
+                R&amp;D Innovation
+            </h3>
+            <ul> <!--utilisé pour une liste -->
+                <li> <!-- élt de chaque liste 
+                    ul et li s'utilisent toujours ensemble -->
+                    Conseil, financement, management 
+                </li>
+                <li>
+                    Crédit d'impot recherche, subventions
+                </li>
+                <li>
+                    Rédaction technique et scientifique (Latex, Office, Linux)
+                </li>
+                <li>
+                    Modélisation financière (Excel)
+                </li>
+                <li>
+                    Veille technologique et innovation
+                </li>
+                <li>
+                    Valorisation de projets
+                </li>              
+            </ul>
+        </div>
+        <div class="carte-competences">
+            <h3>
+                Développement d'applications
+            </h3>
+            <ul> <!--utilisé pour une liste -->
+                <li> <!-- élt de chaque liste 
+                    ul et li s'utilisent toujours ensemble -->
+                    Visual studio Code 
+                </li>
+                <li>
+                    Git / GitHub
+                </li>
+                <li>
+                    HTML / CSS / Javascript
+                </li>
+                <li>
+                    Java / PostgreSQL
+                </li>
+            </ul>
+        </div>
+    </div>
 </main>
 
 <footer> <!-- élt de pied de page qui est souvent en bas de page et contient les 
@@ -101,6 +174,10 @@
             _blank permet d'afficher la ressource dans un nouvel onglet -->
         Github
         </a>
+        <!-- on n'a pas utilisé nav car nav est surtout utilisé pour 
+         un bloc de a, quand a beaucoup de <a>. La différence entre a et link 
+        que link est utilisé dans le head alors que <a> est utilisé dans le 
+        body -->
     </p>
     <p>
        © 2026 - DIANZINGA Mamy Rivo 
