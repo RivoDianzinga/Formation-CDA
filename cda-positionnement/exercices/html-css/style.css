@@ -1,0 +1,150 @@
+/* 
+Une fois le css importé dans le html, le css prend les balises du html et leur 
+applique un certain style, une certaine apparence. Il faut donc maitriser les 
+propriétés ainsi que leurs valeurs qui permettent d'appliquer une certaine 
+apparence.
+*/
+
+/* 
+Apparence sur le footer
+*/
+footer{
+    background-color: #ecf0f1; 
+    /* définit la couleur du fond ou de l'arrière plan. Les valeurs de 
+    cette propriété peuvent ètre des mot-clés, des valeurs hexadécimales, 
+    des valeurs rgb, etc. */
+    text-align: center; 
+    /* définit l'alignement horizontal du contenu à l'intérieur d'un élt 
+    bloc ou d'une boite de cellule de tableau. une de ses valeurs est 
+    center pour centrer le texte */
+    padding: 20px;
+    /* définit la zone de remplissage sur les 4 cotés d'un texte en 
+    une seule fois. La zone de remplissage d'un élt correspond à l'espace 
+    entre son contenu et sa bordure. Les 4 cotés sont : gauche, droite,  
+    haut et bas. Lorsqu'une valeur est donnée, est s'applique aux 4 
+    cotés. 4 valeurs pour respectivement haut, droite, bas et gauche.
+    2 valeurs pour haut-bas, gauche-droite. 3 valeurs pour haut, 
+    droite-gauche, et bas. */
+}
+
+/* 
+Apparence sur le main
+*/
+main{
+    max-width: 800px;
+    /* définit la valeur maximale du contenu d'un élt. Contrairement à 
+    width qui fixe la valeur, max-width dit que la valeur doit ètre 
+    inférieure ou égale. */
+    text-align: center;
+    padding: 40px 20px;
+    margin: auto;
+    /* définit la zone de marge sur les 4 cotés d'un élt. Elle est surtout 
+    utilisée pour des blocs de textes, contrairement à text-align qui est 
+    utilisé pour les lignes de texte. margin permet de controler l'espace 
+    autour du bloc de texte */
+}    
+
+/* Apparence sur le header */
+header{
+    background-color: #2c3e50;
+    color: white;
+    /* définit la couleur du texte */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Apparence sur le nav */
+nav a{
+    color: white;
+}
+
+nav{
+    display: flex;
+    /* la flexbox est un modèle de disposition qui permet de bien afficher 
+    des éléments dans une seule dimension, comme une ligne ou une colonne. 
+    On l'utilise souvent sur un div, un nav, etc. en fait des élts qu'on 
+    peut disposer sous forme de tableau. Pour utiliser flexbox sur la 
+    balise concernée, on utilise : display (flex) pour activer la 
+    flexbox, flex-direction qui donne l'axe principal qui est par 
+    défaut row, justify-content qui donne l'espacement sur l'axe principal,
+    align-items l'espacement sur l'axe secondaire, et en fin gap qui 
+    donne l'espacement */
+    flex-direction: row;
+    /* l'axe principal est la ligne */
+    justify-content: center;
+    /* on centre parfaitement sur la ligne */
+    align-items: center;
+    /* on centre parfaitement sur la colonne */
+    gap: 90px;
+    /* on impose ensuite l'espacement */
+}
+
+#apropos{
+    text-align: justify;
+    /* la valeur "justify" permet de répartir le texte de manière uniforme
+    entre les marges, ainsi les bords des parapgraphes sont affinées et 
+    clarifiés. Contrairement à la valeur "center" qui centre mais n'affine 
+    pas les bords de texte */
+    line-height: 1.5; 
+    /* utilisé pour spécifier l'espace entre les lignes de paragraphes */
+}
+
+ul{
+    text-align: left;
+    /* permet d'aligner le contenu de texte à gauche */
+}
+
+li{
+    margin: 10px;
+    /* utilisé pour espacer les élts d'une liste */
+}
+
+.carte-competences{
+    border: 1px gray;
+    /* définit la bordure d'un texte ou les lignes d'encadrement d'un texte.
+    ses valeur sont l'épaisseur ou la largeur de bordure, le style (solide, 
+    tirets,...) et la couleur de la bordure */
+    border-radius: 8px;
+    /* par défaut, la bordure d'un texte est un rectangle. et donc "border-radius"
+    permet d'arrondir les coins de la bordure. cette propriété peut avoir 
+    jusqu'à 4 valeurs */
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    /* permet d'ajouter des effets d'ombre autour de la bordure d'un texte, 
+    la rgba est défini par les 3 couleurs rvb et la 4è valeur est la 
+    transparence ou le gradient */
+    width: 1000px;
+    /* fixe la largeur des boites */
+}
+
+.grille-competences{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+    /* la valeur stretch permet à ce que, sur l'axe secondaire, les élts soient 
+    au mème niveau en haut et en bas. autrement dit, elle permet d'étirer mais 
+    de façon égale. */
+    gap: 10px;
+}
+
+#mescompetences{
+    margin-bottom: 30px;
+    /* permet de créer de l'espace en bas */
+    margin-top: 40px;
+    /* permet de créer de l'espace en haut */
+}
+
+
+@media (max-width: 768px){
+    /* pour le response design, on met d'abord dans le head du html, la meta 
+    "content=devide-width initial scale=1.0", et dans le css, on utilise 
+    @media dans lequel on met la propriété qu'on veut changer, mais avec de 
+    nouvelles valeurs  */
+    .grille-competences{
+        flex-direction: column;
+        column-count: 1;
+        /* ici, dans le responsive design, on impose à ce que la grille devienne 
+        une seul colonne */
+    }
+} 
