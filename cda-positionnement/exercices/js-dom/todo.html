@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF68">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="todo.js" defer></script>
+        <!--comme appris, on place les scripts dans le head. effectivement, 
+        le script javascript est placé ici dans le head, et avec l'attribut 
+        "defer". c'est la bonne pratique courante, par rapport à l'approche 
+        classique où le script du javascript est placé à la fin du body.
+        On rappelle que le chemin est toujours du fichier actuel vers le 
+        fichier ressource-->
+</head>
+
+<body>
+    <main>
+        <form> <!-- crée le formulaire, tous les champs à remplir, à 
+            saisir par l'utilisateur se trouvent à l'intérieur de "form"-->
+            <label for="form-ajouter">
+                <!--le label est l'étiquette du champ à saisir, 
+                l'information à donner ou à faire-->
+                Ajouter une tache
+            </label>
+            <input
+                id="champ-ajouter"
+                type="text"
+            >
+            <!--le input crée la zone de remplissage, le champ où l'utilisateur
+            saisit l'information. On associe généralement le label et le 
+            input puisqu'il faut associer l'étiquette à sa zone de 
+            remplissage. le "for" du label est le "id" du input. et on 
+            spécifie le type du input, pour savoir s'il s'agit d'un texte, 
+            d'un nombre...à saisir-->
+        </form>
+        <button id="bouton-ajouter"> <!--permet de créer un bouton, et ici ce bouton 
+            est placé dans le formulaire -->
+            Ajouter
+        </button>
+        <ol class="liste-ajouter">
+            <!-- ol (ordered list) est une liste ordonnée, généralement 
+             affichée sous forme de liste numérotée. contrairement 
+             à ul (unordered list) qui présente juste des tirets. les 
+             deux types de listes ul et ol utilisent li -->
+        </ol>
+    </main>
+
+</body>
+
+</html>
