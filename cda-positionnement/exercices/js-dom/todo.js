@@ -40,6 +40,13 @@ boutonAjouter.addEventListener("click", function(event){
   la fenètre d'écran, du toucher de l'écran. A chaque event, 
   correspond une mot-clé approprié en javascript à connaitre ;
   - La fonction de réponse qui est le plus dur à définir.
+  attribut ---> méthodes de sélection (document.querySelector)
+  écouteur ---> addEventListener
+  event ---> keyword pour souris, clavier, fenètre, formulaire, 
+             touché
+  fonction de réponse ---> target, méthodes de création/insertion
+                           et surtout l'arborescence de l'élt
+                           concerné dans le DOM (html)
 */
     event.preventDefault();
     /* empèche l'event par défaut du navigateur */
