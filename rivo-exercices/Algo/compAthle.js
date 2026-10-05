@@ -8,11 +8,11 @@ class Athlete{
     }
 
     nompComplet(){
-        return `${prenom}${nom}`;
+        return `${prenom} ${nom}`;
     }
 
     toString(){
-        return this.prenom + "" + this.nom + (this.pays + this.equipe) ;
+        return `${this.prenom} ${this.nom} (${this.pays}, ${this.equipe})`;
     }
 }
 
