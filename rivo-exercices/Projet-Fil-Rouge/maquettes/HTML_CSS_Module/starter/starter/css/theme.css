@@ -1,25 +1,71 @@
 /* ==========================================================================
-   theme.css - Votre identite visuelle
-   --------------------------------------------------------------------------
-   Ce fichier est charge APRES tokens.css : toute variable redefinie ici
-   remplace celle du design system commun.
-
-   Regles :
-   - ne surchargez que des tokens SEMANTIQUES (--color-primary, --font-sans...)
-   - verifiez chaque couple texte / fond avec un outil de contraste
-     (WebAIM Contrast Checker) : 4.5:1 minimum pour le texte.
-
-   La version de reference garde le theme par defaut. Exemple de theme
-   "vert foret" ci-dessous, a decommenter pour tester.
+   theme.css — Identité visuelle ThermalStudy
    ========================================================================== */
 
-/*
 :root {
-  --color-primary: #166534;
-  --color-primary-hover: #14532d;
-  --color-primary-soft: #f0fdf4;
-  --color-focus: #15803d;
+  /* ---------- Couleurs principales ---------- */
+
+  --color-primary: #0966D6;
+  --color-primary-hover: #0757B8;
+  --color-primary-soft: #E8F1FC;
+  --color-on-primary: #FFFFFF;
+
+  /* ---------- Fonds et surfaces ---------- */
+
+  --color-bg: #F8F8F8;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F3F4F6;
+
+  /* ---------- Texte ---------- */
+
+  --color-text: #000000;
+  --color-text-muted: #4B5563;
+
+  /* ---------- Bordures et focus ---------- */
+
+  --color-border: #E5E7EB;
+  --color-border-input: #6B7280;
+  --color-focus: #0966D6;
+
+  /* ---------- Accent ThermalStudy ---------- */
+
+  --color-accent: #FDBA74;
+
+  /* ---------- États ---------- */
+
+  --color-success: #15803D;
+  --color-success-soft: #DCFCE7;
+  --color-success-text: #166534;
+
+  --color-warning: #B45309;
+  --color-warning-soft: #FEF3C7;
+  --color-warning-text: #92400E;
+
+  --color-danger: #B91C1C;
+  --color-danger-hover: #991B1B;
+  --color-danger-soft: #FEE2E2;
+  --color-danger-text: #991B1B;
+
+  --color-info-soft: #DBEAFE;
+  --color-info-text: #1E40AF;
+
+  /* ---------- Typographie ---------- */
+
   --font-sans: "Inter", system-ui, sans-serif;
-  --radius: 4px;
 }
-*/
+/* Police auto-hébergée */
+@font-face {
+  font-family: "Inter";
+  src: url("../Inter/static/inter-latin-ext-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../Inter/static/inter-latin-ext-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

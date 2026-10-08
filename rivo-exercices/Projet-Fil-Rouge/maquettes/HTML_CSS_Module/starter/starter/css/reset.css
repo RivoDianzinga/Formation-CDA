@@ -1,6 +1,6 @@
 /* ==========================================================================
-   reset.css
-   Remet a plat les styles par defaut des navigateurs pour partir d'une base
+   reset.css — ThermalStudy
+   Remet à plat les styles par défaut des navigateurs pour partir d'une base
    identique sur Chrome, Firefox, Safari et Edge.
    ========================================================================== */
 
@@ -11,13 +11,13 @@
   box-sizing: border-box;
 }
 
-/* On supprime les marges par defaut, on les gere avec nos tokens. */
+/* On supprime les marges par défaut, on les gère avec nos tokens. */
 * {
   margin: 0;
 }
 
 html {
-  /* Evite que le texte grossisse tout seul en mode paysage sur iOS. */
+  /* Évite que le texte grossisse tout seul en mode paysage sur iOS. */
   -webkit-text-size-adjust: 100%;
 }
 
@@ -27,7 +27,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Les medias ne debordent jamais de leur conteneur. */
+/* Les médias ne débordent jamais de leur conteneur. */
 img,
 picture,
 video,
@@ -37,7 +37,7 @@ svg {
   max-width: 100%;
 }
 
-/* Les champs de formulaire heritent de la police du site. */
+/* Les champs de formulaire héritent de la police du site. */
 input,
 button,
 textarea,
@@ -50,7 +50,7 @@ button {
   cursor: pointer;
 }
 
-/* Les longs mots (emails, URLs) passent a la ligne au lieu de deborder. */
+/* Les longs mots (emails, URLs) passent à la ligne au lieu de déborder. */
 p,
 h1,
 h2,
@@ -61,7 +61,7 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/* Les listes avec un role explicite (navigation) perdent leurs puces. */
+/* Les listes avec un rôle explicite (navigation) perdent leurs puces. */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
@@ -72,7 +72,7 @@ table {
   border-collapse: collapse;
 }
 
-/* Accessibilite : on respecte le reglage systeme "reduire les animations". */
+/* Accessibilité : on respecte le réglage système "réduire les animations". */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
