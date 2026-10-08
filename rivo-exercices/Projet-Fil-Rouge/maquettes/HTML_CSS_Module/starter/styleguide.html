@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- lang : langue de la page, utilisee par les lecteurs d'ecran et les moteurs de recherche. -->
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sans cette balise, le mobile affiche la page en version desktop dezoomee. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Titre unique par page : "Nom de la page - Nom du site". C'est ce qui
+       s'affiche dans l'onglet, l'historique et les resultats de recherche. -->
+  <title>Guide de style - ThermalStudy</title>
+  <meta name="description" content="Une phrase qui resume le contenu de la page.">
+
+  <!-- Application interne : pas d'indexation par les moteurs de recherche. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#1d4ed8">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="starter/css/main.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Design System ThermalStudy</h1>
+
+    <section aria-labelledby="couleurs-title">
+
+        <h2>
+            Couleurs sémantiques
+        </h2>
+            <p style ="color : var(--color-primary);" > --color-primary : #0966D6 </p>
+            <p style ="color : var(--color-bg);"> --color-background : #F8F8F8 </p> 
+            <p style ="color : var(--color-text);"> --color-text : #000000 </p>  
+    </section>
+
+    <section>
+
+        <h2>
+            Typographie
+        </h2>
+        <p style="font-family: var(--font-sans);">
+            Texte normal
+        </p>
+        <p style="font-size: var(--text-xs);">
+            --text-xs — 12px
+        </p>
+
+        <p style="font-size: var(--text-sm);">
+            --text-sm — 14px
+        </p>
+
+        <p style="font-size: var(--text-base);">
+            --text-base — 16px
+        </p>
+    </section>
+
+    <section>
+
+        <h2>
+            Boutons
+        </h2>
+        <button class="btn btn--primary">
+            Se connecter
+        </button>
+    </section>
+
+    <section>
+
+        <h2>
+            Badges
+        </h2>
+        <span class="badge badge--draft">Brouillon</span>
+        <span class="badge badge--submitted">Soumise</span>
+        <span class="badge badge--approved">Validée</span>
+        <span class="badge badge--rejected">Rejetée</span>
+
+    </section>
+
+
+    <section>
+
+        <h2>
+            Alertes
+        </h2>
+        <div class="alert alert--info">
+            <p>Cette étude est en attente de validation.</p>
+        </div>
+
+        <div class="alert alert--warning">
+            <p>La simulation n'a pas convergé.</p>
+        </div>
+
+        <div class="alert alert--error">
+            <p>Impossible d'enregistrer l'étude.</p>
+        </div>
+    </section>
+
+    <section>
+
+        <h2>
+            Cartes
+        </h2>
+        <div class="card">
+            <div class="card__header">
+                <h3 class="card__title">Étude ET-0039</h3>
+            </div>
+
+            <p>Simulation thermique</p>
+
+            <div class="card__footer">
+                <span>Validée</span>
+            </div>
+        </div>
+    </section>
+
+  </main>
+</body>
+</html>
