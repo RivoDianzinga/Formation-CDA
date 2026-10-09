@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">ThermalStudy favicon</title>
+  <desc id="desc">Stylized T with integrated thermometer and cool-to-warm thermal gradient.</desc>
+
+  <defs>
+    <linearGradient id="thermalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6"/>
+      <stop offset="38%" stop-color="#0EA5E9"/>
+      <stop offset="68%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FF5A1F"/>
+    </linearGradient>
+
+    <radialGradient id="bulbGradient" cx="45%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#FDBA74"/>
+      <stop offset="55%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FF5A1F"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Main T body -->
+  <path d="M92 64
+           Q92 44 112 44
+           H400
+           Q420 44 420 64
+           V120
+           Q420 144 396 144
+           H304
+           V320
+           Q304 368 272 396
+           Q256 410 240 396
+           Q208 368 208 320
+           V144
+           H116
+           Q92 144 92 120
+           Z"
+        fill="url(#thermalGradient)"/>
+
+  <!-- Thermometer white channel -->
+  <path d="M256 106
+           C232 106 216 122 216 146
+           V320
+           C188 337 170 368 170 402
+           C170 450 208 488 256 488
+           C304 488 342 450 342 402
+           C342 368 324 337 296 320
+           V146
+           C296 122 280 106 256 106 Z"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="26"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Thermometer liquid -->
+  <path d="M256 144 V348"
+        stroke="#F97316"
+        stroke-width="22"
+        stroke-linecap="round"/>
+
+  <!-- Bulb -->
+  <circle cx="256" cy="404" r="58" fill="url(#bulbGradient)"/>
+</svg>

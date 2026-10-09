@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connexion - ThermalStudy</title>
+
+    <link rel="icon" href="assets/ThermalStudy_favicon.svg"
+          type="image/svg+xml">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="home">
+
+    <main class="home__content">
+
+        <div class="login-page">
+
+            <a href="homepage.html" class="login-page__logo">
+                <img src="assets/ThermalStudy_logo.png"
+                     alt="ThermalStudy">
+            </a>
+
+            <h1 class="login-page__title">Connexion</h1>
+
+            <form id="login-form" class="login-form">
+
+                <div class="login-form__group">
+                    <label class="login-form__label"
+                           for="login-email">
+                        Adresse email
+                    </label>
+
+                    <input
+                        class="login-form__input"
+                        id="login-email"
+                        name="email"
+                        type="email"
+                        autocomplete="username"
+                        placeholder="nom.prenom@thermalstudy.com"
+                        required
+                    >
+                </div>
+
+                <div class="login-form__group">
+                    <label class="login-form__label"
+                           for="login-password">
+                        Mot de passe
+                    </label>
+
+                    <input
+                        class="login-form__input"
+                        id="login-password"
+                        name="password"
+                        type="password"
+                        autocomplete="current-password"
+                        placeholder="Votre mot de passe"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn--primary login-form__submit">
+                    Se connecter
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

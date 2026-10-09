@@ -181,3 +181,67 @@
 .alert__title {
   font-weight: var(--weight-semibold);
 }
+
+/* Page de connexion */
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-5);
+    width: 100%;
+    padding: var(--space-4);
+}
+
+.login-page__logo img {
+    width: 300px;
+    height: auto;
+}
+
+.login-page__title {
+    font-size: var(--text-3xl);
+    text-align: center;
+}
+
+/* Formulaire de connexion */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.login-form__label {
+    font-size: var(--text-base);
+    font-weight: var(--weight-semibold);
+}
+
+.login-form__input {
+    width: 100%;
+    min-height: 3rem;
+    padding: var(--space-3);
+    border: 1px solid var(--color-border-input);
+    border-radius: var(--radius);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+}
+
+.login-form__input:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+}
+
+.login-form__submit {
+    width: 100%;
+    min-height: 3.25rem;
+    margin-top: var(--space-2);
+    font-size: var(--text-base);
+}
